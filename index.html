@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<title>CSV generator</title>
+
+</head>
+
+<body>
+	<main class="main">
+		<div class="heading">
+			<h1 class="heading__title">CSV generator</h1>
+			<h3 class="heading__title _sub">for ASPC</h3>
+		</div>
+
+		<div class="form">
+			<h4 class="form__title">Глобальная конфиг</h4>
+			<input type="text" placeholder="Группа" id="group" />
+
+			<h4 class="form__title">Пользователи</h4>
+			<input type="email" placeholder="email" id="email" />
+			<input type="text" placeholder="Имя" id="firstName" />
+			<input type="text" placeholder="Фамилия" id="lastName" />
+
+			<button id="addUser">Добавить</button>
+		</div>
+
+		<table class="table" id="table">
+			<caption>
+				Таблица
+			</caption>
+
+			<thead class="table__head">
+				<tr>
+					<th>email</th>
+					<th>username</th>
+					<th>firstname</th>
+					<th>lastname</th>
+					<th>password</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<!-- here will be added all data's :3 -->
+			</tbody>
+		</table>
+
+		<button id="export">Экспорт CSV</button>
+	</main>
+
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
